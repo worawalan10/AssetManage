@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ระบบจัดการทรัพย์สินภายในองค์กร</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/stylesheet-compiled.css?<?php echo rand(0,999); ?>">
+  </head>
+
+  
+  <body>
+	<div class="container container-logo">
+		<div class="block-img-logo">
+			<img src="img/logo.png">
+		</div>
+	</div>
+	
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>&nbsp; หน้าหลัก<span class="sr-only">(current)</span></a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; เพิ่มข้อมูลทรัพย์สิน</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>&nbsp; รายงาน</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="false" aria-expanded="true"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp; ค้นหา &nbsp;<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>&nbsp; ค้นหาจากหมายเลขครุภัณฑ์ </a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>&nbsp; ค้นหาโดยใช้ QR Code</a></li>
+							<!-- Seperate menu
+							<li role="separator" class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">One more separated link</a></li> -->
+						</ul>
+					</li>
+				</ul>
+				
+				<!-- Search and Submit
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+				-->
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp; User Profile <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp; แก้ไขข้อมูลส่วนตัว</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp; ออกจากระบบ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</header>
+
+
+  
+  
+  <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/popper/umd/popper.min.js"></script> -->
+    <!-- <script type="text/javascript" src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-validator/validator.min.js"></script>
+    <script type="text/javascript" src="script/script.js?<?php echo rand(0,999); ?>"></script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>	
+</html>
