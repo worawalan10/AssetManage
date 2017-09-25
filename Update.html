@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/stylesheet-compiled.css?<?php echo rand(0,999); ?>">
     <script src="jquery-2.1.3.min.js"></script>
 
@@ -13,144 +14,153 @@
     <link href="dist/css/bootstrap-datepicker.css" rel="stylesheet" />
     <script src="dist/js/bootstrap-datepicker-custom.js"></script>
     <script src="dist/locales/bootstrap-datepicker.th.min.js" charset="UTF-8"></script>
-  </head>
-<?php
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<!--<?php
 
     include "header.php";
     //echo "<div>".$index.php."</div>"; //Change only this part on every other page you will create
 
-?>
+?>-->
+
 <body style="background-color:floralwhite;">
-<div class="container">
-    <form action="/action_page.php">
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="form-group">
-                <label for="inputdefault">หมายเลขครุภัณฑ์ :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">หมายเลขทรัพย์สิน :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">คำอธิบายครุภัณฑ์ :</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">สถานที่ :</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">รหัสหน่วยงาน :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">Brand :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">Serial :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">รุ่น :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
-            <div class="form-group">
-                <label for="inputdefault">เลขที่ใบโอน :</label>
-                <input class="form-control-col-xs-4" id="inputdefault" type="text">
-            </div>
+    <div w3-include-html="header.html"></div>
+    <div class="container">
+        <form action="/action_page.php">
             <div class="row">
-                <div class='col-sm-6'>
+                <div class="col-sm-6">
                     <div class="form-group">
-                        <label for="inputdefault">วันที่ตรวจนับ :</label>
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                        <label for="inputdefault">หมายเลขครุภัณฑ์ :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
                     </div>
+                    <div class="form-group">
+                        <label for="inputdefault">หมายเลขทรัพย์สิน :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">คำอธิบายครุภัณฑ์ :</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">สถานที่ :</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">รหัสหน่วยงาน :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">Brand :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">Serial :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">รุ่น :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputdefault">เลขที่ใบโอน :</label>
+                        <input class="form-control-col-xs-4" id="inputdefault" type="text">
+                    </div>
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <label for="inputdefault">วันที่ตรวจนับ :</label>
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker1').datetimepicker();
+                            });
+                        </script>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $('.datepicker').datepicker({
+                                format: 'dd/mm/yyyy',
+                                todayBtn: true,
+                                language: 'th',
+                                thaiyear: true
+                            }).datepicker("setDate", "0");
+                        });
+                    </script>
+                    <div class="dropdown">
+                        <label for="inputdefault">เปอร์เซ็นต์ :</label><br>
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0%
+            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">25%</a></li>
+                            <li><a href="#">50%</a></li>
+                            <li><a href="#">55%</a></li>
+                            <li><a href="#">75%</a></li>
+                            <li><a href="#">90%</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <label for="inputdefault">สถานะ :</label><br>
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">สถานะยังไม่ถูกเลือก
+            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ใช้งาน</a></li>
+                            <li><a href="#">ไม่ใช้งาน</a></li>
+                            <li><a href="#">ขาดบัญชี</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <label for="inputdefault">Option :</label><br>
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">option
+            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">สินทรัพย์ที่ได้ตรวจนับแล้วถูกต้อง</a></li>
+                            <li><a href="#">สินทรัพย์ที่ได้ตรวจนับแล้วไม่ถูกต้อง</a></li>
+                            <li><a href="#">สินค้าที่ไม่พบในPocket PC</a></li>
+                        </ul>
+                    </div>
+                </div><br>
+                <div class="col-sm-6">
+                    <center>
+                        <img src="img_avatar1.png" class="media-object" style="width:100px">
+                        <input type="file">
+                    </center>
                 </div>
-                <script type="text/javascript">
-                    $(function () {
-                    $('#datetimepicker1').datetimepicker();
-                 });
-                </script>
             </div>
-            <script>
-                $(document).ready(function () {
-                $('.datepicker').datepicker({
-                    format: 'dd/mm/yyyy',
-                    todayBtn: true,
-                    language: 'th',             
-                    thaiyear: true             
-                }).datepicker("setDate", "0");
-            });
-        </script>
-        <div class="dropdown">
-            <label for="inputdefault">เปอร์เซ็นต์ :</label><br>
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">0%
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">25%</a></li>
-                <li><a href="#">50%</a></li>
-                <li><a href="#">55%</a></li>
-                <li><a href="#">75%</a></li>
-                <li><a href="#">90%</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <label for="inputdefault">สถานะ :</label><br>
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">สถานะยังไม่ถูกเลือก
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">ใช้งาน</a></li>
-                <li><a href="#">ไม่ใช้งาน</a></li>
-                <li><a href="#">ขาดบัญชี</a></li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <label for="inputdefault">Option :</label><br>
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">option
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-                <li><a href="#">สินทรัพย์ที่ได้ตรวจนับแล้วถูกต้อง</a></li>
-                <li><a href="#">สินทรัพย์ที่ได้ตรวจนับแล้วไม่ถูกต้อง</a></li>
-                <li><a href="#">สินค้าที่ไม่พบในPocket PC</a></li>
-            </ul>
-        </div>
     </div><br>
-    <div class="col-sm-6">
-        <center>
-            <img src="img_avatar1.png" class="media-object" style="width:100px">
-            <input type="file">
-        </center>
-            </div>
-            </div>
-        </div><br>
     </div>
-        <center>
-            <button type="submit" class="btn btn-default btn-lg">บันทึกการเปลี่ยนแปลง</button>&nbsp&nbsp
-            <button type="submit" class="btn btn-default btn-lg">ยกเลิก</button>
-        </center>
+    <center>
+        <button type="submit" class="btn btn-default btn-lg">บันทึกการเปลี่ยนแปลง</button>&nbsp&nbsp
+        <button type="submit" class="btn btn-default btn-lg">ยกเลิก</button>
+    </center>
     </form><br><br>
-</div>
+    </div>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
-<?php
+<!--<?php
 
 	include "footer.php"
 
-?>
+?>-->
 
- <script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
-    <!-- <script type="text/javascript" src="lib/popper/umd/popper.min.js"></script> -->
-    <!-- <script type="text/javascript" src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script> -->
-    <script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/bootstrap-validator/validator.min.js"></script>
-    <script type="text/javascript" src="script/script.js?<?php echo rand(0,999); ?>"></script>
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>	
+
+<script type="text/javascript" src="lib/jquery/jquery-3.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="lib/popper/umd/popper.min.js"></script> -->
+<!-- <script type="text/javascript" src="lib/bootstrap-4.0.0/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="lib/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap-validator/validator.min.js"></script>
+<script type="text/javascript" src="script/script.js?<?php echo rand(0,999); ?>"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
 </html>
